@@ -8,7 +8,7 @@ export default function NavBar() {
         {/* <SquareMenu className="mr-1 h-10 w-10 stroke-cyan-600" /> */}
         <div>Jeremy's Portfolio</div>
       </div>
-      <ul className="flex flex-row gap-x-8 font-medium">
+      <ul className="flex gap-x-3 font-medium text-gray-200">
         <li className="hover:text-amber-200 cursor-pointer">About me</li>
         <li className="hover:text-amber-200 cursor-pointer">Projects</li>
         <li className="hover:text-amber-200 cursor-pointer">Skills</li>

@@ -1,3 +1,19 @@
+import About from "./layouts/About";
+import NavBar from "./layouts/NavBar";
+import Projects from "./layouts/Projects";
+
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <NavBar />
+      <About />
+      <Projects />
+      {/*
+      <Skills />
+      <Education />
+      <Experience />
+      <Blog />
+      <Contact /> */}
+    </>
+  );
 }
