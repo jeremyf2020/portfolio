@@ -14,31 +14,33 @@ const techColors: { [key: string]: string } = {
   JavaScript: "bg-yellow-400 text-yellow-900",
   HTML: "bg-orange-400 text-orange-900",
   CSS: "bg-blue-400 text-blue-900",
-  TypeScript: "bg-blue-500 text-blue-100", // Added TypeScript for consistency
+  TypeScript: "bg-blue-500 text-blue-100",
 };
 
 const createProject = ({ name, logo, tech, description }: ProjectProps) => (
-  <div className="flex flex-col items-center bg-slate-800 p-3 rounded-md mb-3">
-    <img
-      className="h-36 w-36 hover:translate-y-1"
-      src={logo}
-      alt={`${name} logo`}
-    />
-    <div>
-      <div className="flex gap-2 items-center">
-        <span className="text-xl font-semibold">{name}</span>
-        {tech.map((technology) => (
-          <span
-            key={technology}
-            className={`rounded-md px-2 py-1 text-xs ${
-              techColors[technology] || "bg-gray-400 text-gray-900"
-            }`}
-          >
-            {technology}
-          </span>
-        ))}
+  <div>
+    <div className="h-36 flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row mb-6">
+      <img
+        className="h-auto w-36 hover:translate-y-1"
+        src={logo}
+        alt={`${name} logo`}
+      />
+      <div>
+        <div className="flex gap-2 items-center">
+          <span className="text-xl font-semibold">{name}</span>
+          {tech.map((technology) => (
+            <span
+              key={technology}
+              className={`rounded-md px-2 py-1 text-xs ${
+                techColors[technology] || "bg-gray-400 text-gray-900"
+              }`}
+            >
+              {technology}
+            </span>
+          ))}
+        </div>
+        <div className="text-gray-400">{description}</div>
       </div>
-      <div className="text-gray-400">{description}</div>
     </div>
   </div>
 );

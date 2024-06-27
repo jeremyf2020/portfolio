@@ -1,6 +1,8 @@
 import About from "./layouts/About";
+import Contact from "./layouts/Contact";
 import NavBar from "./layouts/NavBar";
 import Projects from "./layouts/Projects";
+import Timeline from "./layouts/Timeline";
 
 export default function App() {
   return (
@@ -8,6 +10,8 @@ export default function App() {
       <NavBar />
       <About />
       <Projects />
+      <Timeline />
+      <Contact />
       {/*
       <Skills />
       <Education />

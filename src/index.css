@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body,
+#root {
   @apply bg-slate-900 
   text-gray-100 
   mx-auto 
