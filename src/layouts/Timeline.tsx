@@ -1,6 +1,6 @@
 export default function Timeline() {
   return (
-    <>
+    <div className="mb-10">
       <h1 className="mb-6 text-2xl font-bold bg-gradient-to-br from-sky-700 to-cyan-100 bg-clip-text text-transparent">
         Experience
       </h1>
@@ -131,6 +131,6 @@ export default function Timeline() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
