@@ -6,30 +6,14 @@ export default {
   ],
   theme: {
     extend: {
-      keyframes: {
-        typing: {
-          "0%": {
-            width: "0%",
-          },
-          "100%": {
-            width: "100%",
-          }
-        },
-        blink: {
-          "0%": {
-            borderColor: "white",
-          },
-          "50%": {
-            borderColor: "transparent",
-          },
-          "100%": {
-            borderColor: "white",
-          }
-        }
+      backgroundImage: {
+        'spotlight': 'radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.5), transparent 40%)',
+        'spotlightEdge': 'radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.1), transparent 40%)'
       },
-      animation: {
-        typing: "typing 2s steps(20) forwards, blink 0.7s steps(20) infinite",
+      transitionDuration: {
+        '500': '500ms',
       }
+
     },
   },
   plugins: [],

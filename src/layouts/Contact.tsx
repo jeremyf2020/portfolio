@@ -22,6 +22,7 @@ export default function Contact() {
           E-mail
         </span>
       </button>
+      <div className="h-10" />
     </>
   );
 }
