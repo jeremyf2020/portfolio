@@ -1,7 +1,7 @@
 export default function NavBar() {
   return (
-    <div className="sticky top-0 w-full mx-auto">
-      <div className="py-6 flex justify-between bg-slate-900 z-10">
+    <div className="sticky top-0 w-full mx-auto z-10">
+      <div className="py-6 flex justify-between bg-slate-900">
         <div
           className="flex items-center bg-gradient-to-br from-sky-700 to-cyan-100 
             bg-clip-text text-xl font-bold text-transparent "

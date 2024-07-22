@@ -1,18 +1,8 @@
-import React from "react";
 import { ReactComponent as BrowserSVG } from "../assets/browser.svg";
 import { ReactComponent as SqlSVG } from "../assets/sql.svg";
 import { ReactComponent as GameSVG } from "../assets/game.svg";
-
+import { handleMouseMove } from "../functions/handMouseMove";
 export default function Skills() {
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>): void => {
-    const target = e.target as HTMLDivElement;
-    const rect = target.getBoundingClientRect(),
-      x = e.clientX - rect.left,
-      y = e.clientY - rect.top;
-    target.style.setProperty("--mouse-x", `${x}px`);
-    target.style.setProperty("--mouse-y", `${y}px`);
-  };
-
   return (
     <>
       <h1 className="mb-6 text-2xl font-bold bg-gradient-to-br from-sky-700 to-cyan-100 bg-clip-text text-transparent mt-5">
