@@ -42,13 +42,13 @@ export default function Projects() {
                   <div className="text-xl font-semibold">Tetris</div>
                 </a>
                 <div className="ml-3 flex gap-2">
-                  <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">
+                  <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-100">
                     HTML
                   </div>
                   <div className="rounded-md px-2 py-1 text-xs font-semibold bg-yellow-400 text-yellow-900">
                     JavaScript
                   </div>
-                  <div className="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">
+                  <div className="rounded-md px-2 py-1 text-xs font-semibold bg-violet-400 text-violet-100">
                     CSS
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export default function Projects() {
                   <div className="rounded-md px-2 py-1 text-xs font-semibold bg-yellow-400 text-yellow-900">
                     JavaScript
                   </div>
-                  <div className="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">
+                  <div className="rounded-md px-2 py-1 text-xs font-semibold bg-violet-400 text-violet-100">
                     CSS
                   </div>
                 </div>
