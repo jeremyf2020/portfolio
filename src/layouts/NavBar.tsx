@@ -7,11 +7,6 @@ export default function NavBar() {
     const sections = document.querySelectorAll<HTMLElement>("section");
     let currentSection = "";
 
-    if (window.scrollY > 1800) {
-      setActiveSection("contact");
-      return;
-    }
-
     sections.forEach((section) => {
       const sectionTop = section.offsetTop;
       if (window.scrollY >= sectionTop - 84) {
@@ -28,8 +23,19 @@ export default function NavBar() {
     };
   }, []);
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    const navHeight = document.getElementById("nav")?.offsetHeight || 0;
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - navHeight,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <div className="sticky top-0 w-full mx-auto z-10">
+    <div id="nav" className="sticky top-0 w-full mx-auto z-10">
       <div className="py-6 flex justify-between bg-slate-900">
         <div
           className="hidden sm:flex items-center bg-gradient-to-br from-sky-700 to-cyan-100 
@@ -39,39 +45,44 @@ export default function NavBar() {
         </div>
         <ul className="flex gap-x-3 font-medium text-gray-200">
           <li
+            onClick={() => scrollToSection("about")}
             className={`hover:text-amber-200 cursor-pointer ${
               activeSection === "about" ? "text-amber-200" : ""
             }`}
           >
-            <a href="#about">About</a>
+            About
           </li>
           <li
+            onClick={() => scrollToSection("projects")}
             className={`hover:text-amber-200 cursor-pointer ${
               activeSection === "projects" ? "text-amber-200" : ""
             }`}
           >
-            <a href="#projects">Projects</a>
+            Projects
           </li>
           <li
+            onClick={() => scrollToSection("skills")}
             className={`hover:text-amber-200 cursor-pointer ${
               activeSection === "skills" ? "text-amber-200" : ""
             }`}
           >
-            <a href="#skills">Skills</a>
+            Skills
           </li>
           <li
+            onClick={() => scrollToSection("timeline")}
             className={`hover:text-amber-200 cursor-pointer ${
               activeSection === "timeline" ? "text-amber-200" : ""
             }`}
           >
-            <a href="#timeline">My Path</a>
+            My Path
           </li>
           <li
+            onClick={() => scrollToSection("contact")}
             className={`hover:text-amber-200 cursor-pointer ${
               activeSection === "contact" ? "text-amber-200" : ""
             }`}
           >
-            <a href="#contact">Contact</a>
+            Contact
           </li>
         </ul>
       </div>
