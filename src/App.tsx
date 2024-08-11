@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import About from "./layouts/About";
 import Contact from "./layouts/Contact";
 import NavBar from "./layouts/NavBar";

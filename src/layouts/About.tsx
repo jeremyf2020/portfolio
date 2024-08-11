@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <div>
-      <div className="flex flex-col items-center gap-x-24 ">
+    <section id="about">
+      <div className="flex flex-col items-center  ">
         <div>
           <p className="text-3xl font-bold mb-6">
             Hi, my name is{" "}
@@ -33,6 +33,6 @@ export default function About() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

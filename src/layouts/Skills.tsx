@@ -4,7 +4,7 @@ import { ReactComponent as GameSVG } from "../assets/game.svg";
 import { handleMouseMove } from "../functions/handMouseMove";
 export default function Skills() {
   return (
-    <>
+    <section id="skills">
       <h1 className="mb-6 text-2xl font-bold bg-gradient-to-br from-sky-700 to-cyan-100 bg-clip-text text-transparent mt-5">
         Skills
       </h1>
@@ -102,6 +102,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

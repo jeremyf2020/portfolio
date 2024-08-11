@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <>
+    <section id="contact">
       <h1 className="mb-6 text-2xl font-bold">
         Contact{" "}
         <span className="bg-gradient-to-br from-sky-700 to-cyan-100 bg-clip-text text-transparent">
@@ -23,6 +23,6 @@ export default function Contact() {
         </span>
       </button>
       <div className="h-10" />
-    </>
+    </section>
   );
 }

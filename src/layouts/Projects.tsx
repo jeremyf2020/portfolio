@@ -5,9 +5,9 @@ import { handleMouseMove } from "../functions/handMouseMove";
 
 export default function Projects() {
   return (
-    <>
+    <section id="projects">
       <h1 className="mb-6 text-2xl font-bold bg-gradient-to-br from-sky-700 to-cyan-100 bg-clip-text text-transparent mt-5">
-        React Projects
+        Recent Projects
       </h1>
 
       <div className="z-4 relative mb-4">
@@ -113,6 +113,6 @@ export default function Projects() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
