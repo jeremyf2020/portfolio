@@ -13,6 +13,9 @@ export default function Projects() {
       <div className="z-4 relative mb-4">
         <div
           onMouseMove={handleMouseMove}
+          onClick={() =>
+            (window.location.href = "https://jeremyf2020.github.io/tetris/")
+          }
           className="
             bg-white/[0.03] rounded-lg  h-60 md:h-52 w-80 cursor-pointer 
               
@@ -24,23 +27,16 @@ export default function Projects() {
         >
           <div className="flex flex-col items-center px-6 gap-x-8  bg-slate-900 inset-[1px] p-2 absolute  rounded-lg z-2  md:flex-row">
             <div className="shrink-0">
-              <a href="/demo/astro-boilerplate">
-                <img
-                  className="h-auto w-36 hover:translate-y-1"
-                  src={tetrisLogo}
-                  alt="tetris-logo"
-                  loading="lazy"
-                />
-              </a>
+              <img
+                className="h-auto w-36 hover:translate-y-1"
+                src={tetrisLogo}
+                alt="tetris-logo"
+                loading="lazy"
+              />
             </div>
             <div>
               <div className="flex flex-col items-center gap-y-2 md:flex-row">
-                <a
-                  className="hover:text-cyan-400"
-                  href="/demo/astro-boilerplate"
-                >
-                  <div className="text-xl font-semibold">Tetris</div>
-                </a>
+                <div className="text-xl font-semibold">Tetris</div>
                 <div className="ml-3 flex gap-2">
                   <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-100">
                     HTML
@@ -76,23 +72,16 @@ export default function Projects() {
         >
           <div className="flex flex-col items-center px-6 gap-x-8  bg-slate-900 inset-[1px] p-2 absolute  rounded-lg z-2  md:flex-row">
             <div className="shrink-0">
-              <a href="/demo/astro-boilerplate">
-                <img
-                  className="h-auto w-36 hover:translate-y-1"
-                  src={todoLogo}
-                  alt="to-do-list-logo"
-                  loading="lazy"
-                />
-              </a>
+              <img
+                className="h-auto w-36 hover:translate-y-1"
+                src={todoLogo}
+                alt="to-do-list-logo"
+                loading="lazy"
+              />
             </div>
             <div>
               <div className="flex flex-col items-center gap-y-2 md:flex-row">
-                <a
-                  className="hover:text-cyan-400"
-                  href="/demo/astro-boilerplate"
-                >
-                  <div className="text-xl font-semibold">To Do List</div>
-                </a>
+                <div className="text-xl font-semibold">To Do List</div>
                 <div className="ml-3 flex gap-2">
                   <div className="rounded-md px-2 py-1 text-xs font-semibold bg-blue-500 text-blue-100">
                     React
